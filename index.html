@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap"
+            rel="stylesheet"
+        />
+        <title>Rock-paper-scissors</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <div class="header-left">
+                    <p class="heading">ROCK</p>
+                    <p class="heading">PAPER</p>
+                    <p class="heading">SCISSORS</p>
+                </div>
+                <div class="header-right">
+                    <div class="score">
+                        <p>
+                            COMPUTER <br />
+                            SCORE
+                        </p>
+                        <p id="computer-score">0</p>
+                    </div>
+                    <div class="score">
+                        <p>
+                            YOUR <br />
+                            SCORE
+                        </p>
+                        <p id="your-score">0</p>
+                    </div>
+                </div>
+            </div>
+            <div id="play-area">
+                <div class="play">
+                    <div class="triangle-down">
+                        <div class="inner-triangle"></div>
+                    </div>
+
+                    <div class="play-actions">
+                        <div class="action" id="rock">
+                            <div class="action-inside">
+                                <img src="assets/rock.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="action" id="scissors">
+                            <div class="action-inside">
+                                <img src="assets/scissors.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="action" id="paper">
+                            <div class="action-inside">
+                                <img src="assets/paper.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules-container hidden" id="rules">
+                <div class="rules">
+                    <p>Game Rules</p>
+                    <ul>
+                        <li>
+                            Rock beats scissors, scissors beat paper, and paper
+                            beats rock.
+                        </li>
+                        <li>
+                            Agree ahead of time whether you’ll count off “rock,
+                            paper, scissors, shoot” or just “rock, paper,
+                            scissors.”
+                        </li>
+                        <li>
+                            Use rock, paper, scissors to settle minor decisions
+                            or simply play to pass the time
+                        </li>
+                        <li>
+                            If both players lay down the same hand, each player
+                            lays down another hand
+                        </li>
+                    </ul>
+                </div>
+                <div class="rules-close" id="rulesClose">X</div>
+            </div>
+            <div class="btns">
+                <div class="btn" id="rules-btn">RULES</div>
+                <div class="btn">NEXT</div>
+            </div>
+        </div>
+        <script defer src="script.js"></script>
+    </body>
+</html>
