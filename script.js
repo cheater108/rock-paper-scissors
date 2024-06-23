@@ -1,11 +1,7 @@
 const container = document.querySelector("#container");
 const playArea = document.querySelector("#query-area");
 
-const rulesBtn = document.querySelector("#rules-btn");
-const rulesClose = document.querySelector("#rulesClose");
-const rules = document.querySelector("#rules");
-
-function initializeGame() {
+function initializeStructure() {
     const initialStructure = `<div class="header">
                 <div class="header-left">
                     <p class="heading">ROCK</p>
@@ -55,41 +51,25 @@ function initializeGame() {
                 </div>
             </div>
 
-            <div class="rules-container hidden" id="rules">
-                <div class="rules">
-                    <p>Game Rules</p>
-                    <ul>
-                        <li>
-                            Rock beats scissors, scissors beat paper, and paper
-                            beats rock.
-                        </li>
-                        <li>
-                            Agree ahead of time whether you’ll count off “rock,
-                            paper, scissors, shoot” or just “rock, paper,
-                            scissors.”
-                        </li>
-                        <li>
-                            Use rock, paper, scissors to settle minor decisions
-                            or simply play to pass the time
-                        </li>
-                        <li>
-                            If both players lay down the same hand, each player
-                            lays down another hand
-                        </li>
-                    </ul>
-                </div>
-                <div class="rules-close" id="rulesClose">X</div>
-            </div>
-            <div class="btns">
-                <div class="btn" id="rules-btn">RULES</div>
-                <div class="btn">NEXT</div>
-            </div>`;
+            
+            `;
     container.innerHTML = initialStructure;
 }
 
-rulesBtn.addEventListener("click", () => {
-    rules.classList.toggle("hidden");
-});
-rulesClose.addEventListener("click", () => {
-    rules.classList.toggle("hidden");
+function initializeGame() {
+    const rulesBtn = document.querySelector("#rules-btn");
+    const rulesClose = document.querySelector("#rulesClose");
+    const rules = document.querySelector("#rules");
+
+    rulesBtn.addEventListener("click", () => {
+        rules.classList.toggle("hidden");
+    });
+    rulesClose.addEventListener("click", () => {
+        rules.classList.toggle("hidden");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initializeStructure();
+    initializeGame();
 });

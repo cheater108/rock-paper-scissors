@@ -7,6 +7,10 @@
 body {
     background-color: #8cc461;
     font-family: Roboto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .header {
@@ -72,11 +76,16 @@ body {
     border-left: 129px solid transparent;
     border-right: 129px solid transparent;
     border-top: 215px solid #8cc461;
-    top: -239px;
-    left: -128px;
+    top: -238px; /*-238  , -239*/
+    left: -129px; /* -129   , -128 */
+}
+
+#play-area {
+    margin-bottom: 65px;
 }
 .play {
     width: 700px;
+    /* max-width: 1200px; */
     margin: auto;
 
     display: flex;
@@ -133,7 +142,8 @@ body {
 
 .btns {
     display: flex;
-    margin: 65px 16px 16px;
+    margin: 0px 16px 16px;
+    margin-top: auto;
     flex-direction: row-reverse;
     gap: 1em;
 }
@@ -152,7 +162,7 @@ body {
 .rules-container {
     position: absolute;
     right: 40px;
-    bottom: -30px;
+    bottom: 65px;
 }
 
 .rules {
