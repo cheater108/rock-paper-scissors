@@ -123,6 +123,9 @@ body {
     position: absolute;
     top: -55px;
     left: 150px;
+}
+
+.rock {
     border: 16px solid #0074b6;
 }
 
@@ -130,6 +133,9 @@ body {
     position: absolute;
     top: -55px;
     left: 418px;
+}
+
+.scissors {
     border: 16px solid #bd00ff;
 }
 
@@ -137,6 +143,9 @@ body {
     position: absolute;
     top: 163px;
     left: 279px;
+}
+
+.paper {
     border: 16px solid #ffa943;
 }
 
@@ -221,4 +230,133 @@ body {
 
 .hidden {
     display: none;
+}
+
+.result {
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.result-left {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result p {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.result-right {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.result-middle p:first-of-type {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+}
+
+.result-middle p:last-of-type {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.play-again {
+    color: #6b6b6b;
+    border: none;
+    font-weight: 600;
+    padding: 0.8em 2em;
+    border-radius: 9px;
+    letter-spacing: 2px;
+}
+
+.concentric-container {
+    position: absolute;
+    top: -36px; /* 297px , -36*/
+    left: -4px; /* 206px , -4 , for pc 638*/
+    z-index: -1;
+}
+
+.circle3 {
+    width: 350px;
+    height: 350px;
+    background-color: #2e9a2563;
+    box-shadow: 0px 1px 62px 0px #00000021;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+    background-color: #1da82bc9;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1 {
+    width: 250px;
+    height: 250px;
+    background-color: #279b27;
+    border-radius: 100%;
+}
+
+.stars-trophy {
+    position: relative;
+    margin-top: 70px;
+}
+
+.winner-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trophy {
+    position: absolute;
+    top: 106px;
+    left: 165px;
+}
+
+.winner-screen p:first-of-type {
+    color: white;
+    font-size: 5.6rem;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.winner-screen p:last-of-type {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }

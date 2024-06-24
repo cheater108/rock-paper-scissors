@@ -1,5 +1,46 @@
 const container = document.querySelector("#container");
-const playArea = document.querySelector("#query-area");
+const playArea = document.querySelector("#play-area");
+
+const result = `<div class="result">
+                    <div class="result-left">
+                        <p>YOU PICKED</p>
+                        <div class="action rock">
+                            <div class="action-inside">
+                                <img src="assets/rock.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-middle">
+                        <p>YOU LOST</p>
+                        <p>AGAINST PC</p>
+                        <button>PLAY AGAIN</button>
+                    </div>
+                    <div class="result-right">
+                        <p>PC PICKED</p>
+                        <div class="action paper">
+                            <div class="action-inside">
+                                <img src="assets/paper.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="concentric-container">
+                        <div class="circle3">
+                            <div class="circle2">
+                                <div class="circle1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+
+const winningScreen = `<div class="winner-screen">
+                <div class="stars-trophy">
+                    <img src="assets/stars.png" alt="" />
+                    <img class="trophy" src="assets/trophy.png" alt="" />
+                </div>
+                <p>HURRAY!!</p>
+                <p>YOU WON THE GAME</p>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>`;
 
 function initializeStructure() {
     const initialStructure = `<div class="header">
@@ -32,17 +73,17 @@ function initializeStructure() {
                     </div>
 
                     <div class="play-actions">
-                        <div class="action" id="rock">
+                        <div class="action rock" id="rock">
                             <div class="action-inside">
                                 <img src="assets/rock.png" alt="" />
                             </div>
                         </div>
-                        <div class="action" id="scissors">
+                        <div class="action scissors" id="scissors">
                             <div class="action-inside">
                                 <img src="assets/scissors.png" alt="" />
                             </div>
                         </div>
-                        <div class="action" id="paper">
+                        <div class="action paper" id="paper">
                             <div class="action-inside">
                                 <img src="assets/paper.png" alt="" />
                             </div>
@@ -53,6 +94,7 @@ function initializeStructure() {
 
             
             `;
+
     container.innerHTML = initialStructure;
 }
 
@@ -70,6 +112,6 @@ function initializeGame() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    initializeStructure();
+    //initializeStructure();
     initializeGame();
 });
