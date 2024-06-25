@@ -216,7 +216,7 @@ function getResultScreen(userMove, pcMove, result) {
     </div>
     <div class="concentric-container ${
         result ? "" : "hidden"
-    }" style="top: -36px; left: ${result === "WON" ? "-4px" : "638px"};">
+    }" style="top: -36px;  ${result === "WON" ? " left:-4px" : "right:-4px"};">
         <div class="circle3">
             <div class="circle2">
                 <div class="circle1"></div>

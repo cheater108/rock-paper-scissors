@@ -297,7 +297,6 @@ body {
 .concentric-container {
     position: absolute;
     top: -36px; /* 297px , -36*/
-    left: -4px; /* 206px , -4 , for pc 638*/
     z-index: -1;
 }
 
