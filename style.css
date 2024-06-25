@@ -360,3 +360,8 @@ body {
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
+
+.play-again:hover {
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+}
