@@ -204,7 +204,7 @@ function getResultScreen(userMove, pcMove, result) {
     <div class="result-middle">
         <p>${result ? "YOU " + result : "TIE UP"}</p>
         <p>${result ? "AGAINST PC" : "&nbsp;"}</p>
-        <button class='play-again'>PLAY AGAIN</button>
+        <button class='play-again'>${result ? "PLAY AGAIN" : "REPLAY"}</button>
     </div>
     <div class="result-right">
         <p>PC PICKED</p>
