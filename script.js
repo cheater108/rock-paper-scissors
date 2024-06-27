@@ -195,8 +195,8 @@ function getResultScreen(userMove, pcMove, result) {
     const resultScreen = `<div class="result">
     <div class="result-left">
         <p>YOU PICKED</p>
-        <div class="action ${userMove}">
-            <div class="action-inside">
+        <div class="action ${userMove}" style="width:140px;height:140px">
+            <div class="action-inside" style="width:140px;height:140px">
                 <img src="assets/${userMove}.png" alt="" />
             </div>
         </div>
@@ -208,15 +208,15 @@ function getResultScreen(userMove, pcMove, result) {
     </div>
     <div class="result-right">
         <p>PC PICKED</p>
-        <div class="action ${pcMove}">
-            <div class="action-inside">
+        <div class="action ${pcMove}" style="width:140px;height:140px">
+            <div class="action-inside" style="width:140px;height:140px">
                 <img src="assets/${pcMove}.png" alt="" />
             </div>
         </div>
     </div>
     <div class="concentric-container ${
         result ? "" : "hidden"
-    }" style="top: -36px;  ${result === "WON" ? " left:-4px" : "right:-4px"};">
+    }" style="top: -20px;  ${result === "WON" ? " left:10px" : "right:10px"};">
         <div class="circle3">
             <div class="circle2">
                 <div class="circle1"></div>
