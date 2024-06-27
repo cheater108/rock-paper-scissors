@@ -83,6 +83,7 @@ body {
 
 #play-area {
     margin-bottom: 65px;
+    min-height: 250px;
 }
 .play {
     width: 700px;
